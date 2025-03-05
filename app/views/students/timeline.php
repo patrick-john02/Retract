@@ -86,7 +86,7 @@ include 'includes/sidebar.php';
 
         <!-- Research Details -->
         <div class="col-12 col-md-12 col-lg-4 order-1 order-md-2">
-            <h3 class="text-primary"><i class="fas fa-paint-brush"></i> <?= htmlspecialchars($researchDetails['title'] ?? 'No Title') ?></h3>
+            <h3 class="text-primary"><i class="fas fa-file-alt"></i> <?= htmlspecialchars($researchDetails['title'] ?? 'No Title') ?></h3>
             <p class="text-muted"><?= nl2br(htmlspecialchars($researchDetails['abstract'] ?? 'No Abstract')) ?></p>
             <br>
             <div class="text-muted">
