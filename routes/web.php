@@ -26,6 +26,7 @@ $router->addRoute('my-research', 'ResearchController', 'myResearch');
 $router->addRoute('research-progress', 'ResearchController', 'getResearchProgress');
 
 $router->addRoute('timeline', 'TimelineController', 'index');
+$router->addRoute('student_profile', 'Students\StudentProfileController', 'index');
 
 //faculty dashboardand other routes related to faculty
 $router->addRoute('faculty-dashboard', 'Faculty\FacultyDashboardController', 'index');

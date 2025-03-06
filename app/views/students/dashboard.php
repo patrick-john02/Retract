@@ -31,6 +31,7 @@ include 'includes/sidebar.php'; ?>
   <link rel="stylesheet" href="../public/assets/lte/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="../public/assets/lte/plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="../public/assets/lte/plugins/select2/css/select2.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -65,11 +66,10 @@ include 'includes/sidebar.php'; ?>
             <div class="small-box bg-info">
               <div class="inner">
                 <h3>5</h3>
-
                 <p>Files Uploaded</p>
               </div>
               <div class="icon">
-              <i class="fas fa-file-upload mr-2"></i>
+                <i class="fas fa-file-upload mr-2"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -80,11 +80,10 @@ include 'includes/sidebar.php'; ?>
             <div class="small-box bg-success">
               <div class="inner">
                 <h3>1</h3>
-
                 <p>Revisions</p>
               </div>
               <div class="icon">
-              <i class="fas fa-edit mr-2"></i>
+                <i class="fas fa-edit mr-2"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -95,11 +94,10 @@ include 'includes/sidebar.php'; ?>
             <div class="small-box bg-warning">
               <div class="inner">
                 <h3>13</h3>
-
                 <p>Document Versions</p>
               </div>
               <div class="icon">
-              <i class="fas fa-copy mr-2"></i>
+                <i class="fas fa-copy mr-2"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
@@ -110,48 +108,77 @@ include 'includes/sidebar.php'; ?>
             <div class="small-box bg-danger">
               <div class="inner">
                 <h3>2</h3>
-
                 <p>Viewed Documents</p>
               </div>
               <div class="icon">
-              <i class="fas fa-eye mr-2"></i>
+                <i class="fas fa-eye mr-2"></i>
               </div>
               <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
         </div>
+        <!-- /.row -->
 
-
-
-        <!-- Main row -->
-        <div class="row">
-          <!-- Left col -->
-          <section class="col-lg-7 connectedSortable">
-            <!-- Custom tabs (Charts with tabs)-->
-            
-
-
-            <!-- /.card -->
-          </section>
-
-          </section>
-          <!-- right col -->
+  <h2 class="text-center display-4"> Search a Capstone</h2>
+<form action="#">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Result Type:</label>
+                        <select class="form-control form-control-lg select2" multiple="multiple" data-placeholder="Select type" style="width: 100%;">
+                            <option>Text only</option>
+                            <option>Images</option>
+                            <option>Video</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Result Type:</label>
+                        <select class="form-control form-control-lg select2" multiple="multiple" data-placeholder="Select type" style="width: 100%;">
+                            <option>Text only</option>
+                            <option>Images</option>
+                            <option>Video</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Result Type:</label>
+                        <select class="form-control form-control-lg select2" multiple="multiple" data-placeholder="Select type" style="width: 100%;">
+                            <option>Text only</option>
+                            <option>Images</option>
+                            <option>Video</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                    <input type="search" class="form-control form-control-lg" placeholder="Type your keywords here">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-lg btn-default">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- /.row (main row) -->
+    </div>
+</form>
+
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>
+  <!-- /.content-wrapper -->
 
-
-
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
 </div>
-<!-- ./wrapper -->
+
+
+
 
 <!-- jQuery -->
 <script src="../public/assets/lte/plugins/jquery/jquery.min.js"></script>
@@ -161,31 +188,26 @@ include 'includes/sidebar.php'; ?>
 <script>
   $.widget.bridge('uibutton', $.ui.button)
 </script>
-<!-- Bootstrap 4 -->
 <script src="../public/assets/lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- ChartJS -->
 <script src="../public/assets/lte/plugins/chart.js/Chart.min.js"></script>
-<!-- Sparkline -->
 <script src="../public/assets/lte/plugins/sparklines/sparkline.js"></script>
-<!-- JQVMap -->
 <script src="../public/assets/lte/plugins/jqvmap/jquery.vmap.min.js"></script>
 <script src="../public/assets/lte/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-<!-- jQuery Knob Chart -->
 <script src="../public/assets/lte/plugins/jquery-knob/jquery.knob.min.js"></script>
-<!-- daterangepicker -->
 <script src="../public/assets/lte/plugins/moment/moment.min.js"></script>
 <script src="../public/assets/lte/plugins/daterangepicker/daterangepicker.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
 <script src="../public/assets/lte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Summernote -->
 <script src="../public/assets/lte/plugins/summernote/summernote-bs4.min.js"></script>
-<!-- overlayScrollbars -->
 <script src="../public/assets/lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<!-- AdminLTE App -->
 <script src="../public/assets/lte/dist/js/adminlte.js"></script>
-<!-- AdminLTE for demo purposes -->
 <script src="../public/assets/lte/dist/js/demo.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="../public/assets/lte/dist/js/pages/dashboard.js"></script>
+<script src="../public/assets/lte/plugins/select2/js/select2.full.min.js"></script>
+<script src="../public/assets/lte/dist/js/adminlte.min.js"></script>
+<script>
+    $(function () {
+      $('.select2').select2()
+    });
+</script>
 </body>
 </html>

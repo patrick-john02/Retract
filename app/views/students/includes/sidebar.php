@@ -62,29 +62,29 @@
   </a>
 </li> -->
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <a href="#" class="nav-link">
     <i class="nav-icon fas fa-bell"></i>
     <p>Notifications</p>
   </a>
-</li>
+</li> -->
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <a href="#" class="nav-link">
     <i class="nav-icon fas fa-user-tie"></i>
     <p>Advisory Panel</p>
   </a>
-</li>
+</li> -->
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <a href="#" class="nav-link">
     <i class="nav-icon fas fa-book-open"></i>
     <p>View Guidelines</p>
   </a>
-</li>
+</li> -->
 
 <li class="nav-item">
-  <a href="#" class="nav-link">
+  <a href="/retract/public/student_profile" class="nav-link">
     <i class="nav-icon fas fa-user"></i>
     <p>Profile</p>
   </a>

@@ -57,8 +57,15 @@ include 'includes/sidebar.php';
     <!-- Main Content -->
     <section class="content">
       <div class="container-fluid">
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addResearchModal">
+    Add Research
+</button>
+<br>
+<br>
         <div class="card">
+          
           <div class="card-header">
+            
             <h3 class="card-title">Research</h3>
           </div>
           <div class="card-body">
@@ -134,6 +141,48 @@ include 'includes/sidebar.php';
     </section>
   </div>
 </div>
+<!-- Add Research Modal -->
+<div class="modal fade" id="addResearchModal" tabindex="-1" aria-labelledby="addResearchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addResearchModalLabel">Add Research</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="researchTitle" class="form-label">Research Title</label>
+                        <input type="text" class="form-control" id="researchTitle" placeholder="Enter research title">
+                    </div>
+                    <div class="mb-3">
+                        <label for="researchDescription" class="form-label">Description</label>
+                        <textarea class="form-control" id="researchDescription" rows="3" placeholder="Enter research description"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="researchStatus" class="form-label">Status</label>
+                        <select class="form-select" id="researchStatus">
+                            <option value="proposal">Proposal</option>
+                            <option value="under review">Under Review</option>
+                            <option value="revision">Revision</option>
+                            <option value="approved">Approved</option>
+                            <option value="published">Published</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="researchFile" class="form-label">Upload File</label>
+                        <input class="form-control" type="file" id="researchFile">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save Research</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 
