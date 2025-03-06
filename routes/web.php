@@ -24,13 +24,17 @@ $router->addRoute('reset-password-post', 'AuthController', 'resetPassword');
 $router->addRoute('student-dashboard', 'Students\StudentDashboardController', 'index');
 $router->addRoute('my-research', 'ResearchController', 'myResearch');
 $router->addRoute('research-progress', 'ResearchController', 'getResearchProgress');
-
 $router->addRoute('timeline', 'TimelineController', 'index');
 $router->addRoute('student_profile', 'Students\StudentProfileController', 'index');
 
 //faculty dashboard and other routes related to faculty
 $router->addRoute('faculty-dashboard', 'Faculty\FacultyDashboardController', 'index');
 $router->addRoute('manage-research', 'Faculty\FacultyManageResearchController', 'index');
+$router->addRoute('manage-approved', 'Faculty\FacultyManageApprovedController', 'index');
+$router->addRoute('manage-rejected', 'Faculty\FacultyManageRejectedController', 'index');
+$router->addRoute('manage-published', 'Faculty\FacultyManagePubhlishedController', 'index');
+$router->addRoute('upload-resources', 'Faculty\FacultyUploadeResourcesController', 'index');
+$router->addRoute('faculty-profile', 'Faculty\FacultyProfileController', 'index');
 
 //admin dashboard and other routes related to admin
 $router->addRoute('admin-dashboard', 'Admin\AdminDashboardController', 'index');
