@@ -26,7 +26,7 @@
                with font-awesome or any other icon font library -->
           
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="/retract/public/faculty-dashboard" class="nav-link active">
             <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -35,25 +35,25 @@
             </a>
           </li>
           <li class="nav-item">
-  <a href="#" class="nav-link">
+  <a href="/retract/public/manage-research" class="nav-link">
     <i class="nav-icon fas fa-book"></i>
     <p>Research Projects</p>
   </a>
 </li>
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <a href="#" class="nav-link">
     <i class="nav-icon fas fa-upload"></i>
     <p>Submitted Research</p>
   </a>
-</li>
+</li> -->
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <a href="#" class="nav-link">
     <i class="nav-icon fas fa-edit"></i>
     <p>Progress Tracking</p>
   </a>
-</li>
+</li> -->
 
 <li class="nav-item">
   <a href="#" class="nav-link">
@@ -65,9 +65,39 @@
 <li class="nav-item">
   <a href="#" class="nav-link">
     <i class="nav-icon fas fa-bell"></i>
-    <p>Library Resources</p>
+    <p>Resources</p>
   </a>
 </li>
+<!-- <li class="nav-header">Research</li> -->
+<li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Research
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Approved</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Rejected</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/jsgrid.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Published</p>
+                </a>
+              </li>
+            </ul>
+          </li>
 
 <li class="nav-item">
   <a href="#" class="nav-link">

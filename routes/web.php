@@ -28,8 +28,10 @@ $router->addRoute('research-progress', 'ResearchController', 'getResearchProgres
 $router->addRoute('timeline', 'TimelineController', 'index');
 $router->addRoute('student_profile', 'Students\StudentProfileController', 'index');
 
-//faculty dashboardand other routes related to faculty
+//faculty dashboard and other routes related to faculty
 $router->addRoute('faculty-dashboard', 'Faculty\FacultyDashboardController', 'index');
+$router->addRoute('manage-research', 'Faculty\FacultyManageResearchController', 'index');
 
 //admin dashboard and other routes related to admin
 $router->addRoute('admin-dashboard', 'Admin\AdminDashboardController', 'index');
+$router->addRoute('ManageUsers', 'Admin\ManageUserController', 'index');
