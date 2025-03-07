@@ -10,7 +10,7 @@ include 'includes/sidebar.php';
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Manage Users</title>
+  <title>Approved Capstone</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -38,7 +38,7 @@ include 'includes/sidebar.php';
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li class="breadcrumb-item active">Capstone</li>
+              <li class="breadcrumb-item active">Approved Capstone</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -47,68 +47,102 @@ include 'includes/sidebar.php';
     <!-- /.content-header -->
   <!-- Main content -->
   <!-- Main content -->
-<section class="content">
+  <section class="content">
     <div class="container-fluid">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">List of Users</h3>
+                <h3 class="card-title">Manage Researches</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="researchTable" class="table table-bordered table-striped">
                     <thead>
                         <tr>
-                            <th>User ID</th>
-                            <th>Full Name</th>
-                            <th>Email</th>
-                            <th>Role</th>
+                            <th>Research ID</th>
+                            <th>Capstone Title</th>
+                            <th>Author(s)</th>
+                            <th>Year</th>
+                            <th>Category</th>
                             <th>Status</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>John Doe</td>
-                            <td>johndoe@example.com</td>
-                            <td>Student</td>
-                            <td>Active</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Jane Smith</td>
-                            <td>janesmith@example.com</td>
-                            <td>Faculty</td>
-                            <td>Active</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Michael Johnson</td>
-                            <td>michaeljohnson@example.com</td>
-                            <td>Dean</td>
-                            <td>Inactive</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Emily Davis</td>
-                            <td>emilydavis@example.com</td>
-                            <td>Student</td>
-                            <td>Active</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>David Martinez</td>
-                            <td>davidmartinez@example.com</td>
-                            <td>Faculty</td>
-                            <td>Active</td>
-                        </tr>
-                    </tbody>
+        <tr>
+            <td>1</td>
+            <td>Unverified AI Chatbot for Students</td>
+            <td>John Doe, Jane Smith</td>
+            <td>2024</td>
+            <td>Artificial Intelligence</td>
+            <td class="text-danger">Rejected</td>
+            <td>
+                <button class="btn btn-info btn-sm">View</button>
+                <button class="btn btn-warning btn-sm">Resubmit</button>
+                <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Faulty IoT Security System</td>
+            <td>Michael Johnson, Emily Davis</td>
+            <td>2023</td>
+            <td>Internet of Things</td>
+            <td class="text-danger">Rejected</td>
+            <td>
+                <button class="btn btn-info btn-sm">View</button>
+                <button class="btn btn-warning btn-sm">Resubmit</button>
+                <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Inaccurate Machine Learning Model</td>
+            <td>Chris Brown, Sarah Wilson</td>
+            <td>2022</td>
+            <td>Machine Learning</td>
+            <td class="text-danger">Rejected</td>
+            <td>
+                <button class="btn btn-info btn-sm">View</button>
+                <button class="btn btn-warning btn-sm">Resubmit</button>
+                <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Unsecure Blockchain Voting System</td>
+            <td>David Martinez, Emma Lopez</td>
+            <td>2024</td>
+            <td>Cybersecurity</td>
+            <td class="text-danger">Rejected</td>
+            <td>
+                <button class="btn btn-info btn-sm">View</button>
+                <button class="btn btn-warning btn-sm">Resubmit</button>
+                <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Incomplete Research on Cloud Computing</td>
+            <td>Daniel Garcia, Olivia Miller</td>
+            <td>2023</td>
+            <td>Cloud Computing</td>
+            <td class="text-danger">Rejected</td>
+            <td>
+                <button class="btn btn-info btn-sm">View</button>
+                <button class="btn btn-warning btn-sm">Resubmit</button>
+                <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+        </tr>
+    </tbody>
                     <tfoot>
                         <tr>
-                            <th>User ID</th>
-                            <th>Full Name</th>
-                            <th>Email</th>
-                            <th>Role</th>
+                            <th>Research ID</th>
+                            <th>Capstone Title</th>
+                            <th>Author(s)</th>
+                            <th>Year</th>
+                            <th>Category</th>
                             <th>Status</th>
+                            <th>Actions</th>
                         </tr>
                     </tfoot>
                 </table>
@@ -116,6 +150,7 @@ include 'includes/sidebar.php';
         </div>
     </div>
 </section>
+
 
 
 

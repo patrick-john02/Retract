@@ -38,4 +38,8 @@ $router->addRoute('faculty-profile', 'Faculty\FacultyProfileController', 'index'
 
 //admin dashboard and other routes related to admin
 $router->addRoute('admin-dashboard', 'Admin\AdminDashboardController', 'index');
-$router->addRoute('ManageUsers', 'Admin\ManageUserController', 'index');
+$router->addRoute('manage-users', 'Admin\ManageUserController', 'index');
+$router->addRoute('manage-researches', 'Admin\ManageResearchesController', 'index');
+$router->addRoute('admin-approved', 'Admin\ManageApprovedController', 'index');
+$router->addRoute('admin-rejected', 'Admin\ManageRejectedController', 'index');
+$router->addRoute('admin-published', 'Admin\ManagePublishedController', 'index');

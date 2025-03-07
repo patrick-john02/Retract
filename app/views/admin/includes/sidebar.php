@@ -14,7 +14,7 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div> -->
         <div class="info">
-          <a href="#" class="d-block">Welcome, <?php echo htmlspecialchars($full_name ?? 'Guest'); ?></a>
+          <a href="#" class="d-block">Welcome, <?php echo htmlspecialchars($username ?? 'Guest'); ?></a>
         </div>
       </div>
 
@@ -26,7 +26,7 @@
                with font-awesome or any other icon font library -->
           
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="/retract/public/admin-dashboard" class="nav-link active">
             <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -35,32 +35,62 @@
             </a>
           </li>
           <li class="nav-item">
-  <a href="#" class="nav-link">
+  <a href="/retract/public/manage-users" class="nav-link">
     <i class="nav-icon fas fa-book"></i>
     <p>Manage Users</p>
   </a>
 </li>
 
 <li class="nav-item">
-  <a href="#" class="nav-link">
+  <a href="/retract/public/manage-researches" class="nav-link">
     <i class="nav-icon fas fa-upload"></i>
     <p>Research Submissions</p>
   </a>
 </li>
 
-<li class="nav-item">
+<li class="nav-item menu-open">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Research
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/retract/public/admin-approved" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Approved</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/retract/public/admin-rejected" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Rejected</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/retract/public/admin-published" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Published</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+<!-- <li class="nav-item">
   <a href="#" class="nav-link">
     <i class="nav-icon fas fa-edit"></i>
     <p>Progress Tracking</p>
   </a>
-</li>
+</li> -->
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <a href="#" class="nav-link">
     <i class="nav-icon fas fa-copy"></i>
     <p>Approval & Review</p>
   </a>
-</li>
+</li> -->
 
 <!-- <li class="nav-item">
   <a href="#" class="nav-link">
@@ -69,12 +99,12 @@
   </a>
 </li> -->
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <a href="#" class="nav-link">
     <i class="nav-icon fas fa-user-tie"></i>
     <p>System Settings</p>
   </a>
-</li>
+</li> -->
 
 <li class="nav-item">
   <a href="/retract/public/logout" class="nav-link">
